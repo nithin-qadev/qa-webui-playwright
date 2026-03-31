@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.qadev'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Source: https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation("org.testng:testng:6.14.3")
+    // Source: https://mvnrepository.com/artifact/com.microsoft.playwright/playwright
+    implementation("com.microsoft.playwright:playwright:1.58.0")
+}
+
+test {
+    useTestNG()
+}
