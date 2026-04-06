@@ -1,0 +1,14 @@
+name: Hello World Workflow
+
+# Defines when the workflow will run
+on: [push]
+
+jobs:
+  say-hello:
+    # Specifies the type of runner (virtual machine) to use
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello Message
+        # The command to execute in the runner's shell
+        run: echo "Hello World!"
